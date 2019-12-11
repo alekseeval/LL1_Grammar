@@ -1,0 +1,13 @@
+12
+S Pe
+P QR
+R E
+R vP
+Q AB
+B E
+B &Q
+A xM
+M =x
+M <x
+M >x
+A (P)

@@ -1,0 +1,13 @@
+12
+F Se
+S AK
+K E
+K +AK
+K -AK
+A BP
+P E
+P *BP
+P /BP
+B (S)
+B n
+B x
