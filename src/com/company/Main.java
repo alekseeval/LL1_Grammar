@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         // Считывание из файла соответствующих данных
-        HashMap<Character, Integer>[] t = readTerminalsFromFile("terms1.txt");
-        String[][] rules = readRulesFromFile("rules1.txt");
-        int[][] table = readTableFromFile("table1.txt");
+        HashMap<Character, Integer>[] t = readTerminalsFromFile("terms.txt");
+        String[][] rules = readRulesFromFile("rules.txt");
+        int[][] table = readTableFromFile("table.txt");
 
         // Создание экземпляра класса, который будет строить вывод
         DownParser dp = new DownParser(t[0], t[1], rules, table);
@@ -22,7 +22,7 @@ public class Main {
         System.out.print("Enter your word >> ");
 //        String word = in.next();
 //        String word = "(n+x*n)*(n-n)e"
-        String word = "(n)e";
+        String word = "(x<x)v(x>x)e";
 
         System.out.println("Построенный вывод:");
         System.out.println(dp.getDef(word));

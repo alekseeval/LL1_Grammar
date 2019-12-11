@@ -37,14 +37,14 @@ public class DownParser {
         for (int i = word.length() - 1; i >= 0; i--) {
             str.add(word.charAt(i));
         }
-        parse.add('F'); // Начальный символ - S
+        parse.add('S'); // Начальный символ - S
 
         // Строка вывода
-        String  current = "F";
-        StringBuilder output = new StringBuilder("F");
+        String  current = "S";
+        StringBuilder output = new StringBuilder("S");
 
         int count = 0; // Позиция в строке, на которой мы стоим (текущий символ)
-        while (!str.empty()){
+        while (!str.empty() && !parse.empty() ){
             current = current.substring(1); // Убрать из current первый символ
 
 
