@@ -20,12 +20,12 @@ public class Main {
         // Считывание слова из консоли
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your word >> ");
-//        String word = in.next();
-//        String word = "(n+x*n)*(n-n)e"
-        String word = "(x<x)v(x>x)e";
+        String word = in.next();
 
+        System.out.println();
+        String answer = dp.getDef(word);
         System.out.println("Построенный вывод:");
-        System.out.println(dp.getDef(word));
+        System.out.println(answer);
 
     }
 
